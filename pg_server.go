@@ -11,8 +11,8 @@ import (
 var db *gorm.DB
 
 type Item struct {
-  ID string gorm:"primaryKey"
-  Value string gorm:"not null"
+  ID string `gorm:"primaryKey"`
+  Value string `gorm:"not null"`
 }
 
 func putHandler(w http.ResponseWriter, r *http.Request) {
